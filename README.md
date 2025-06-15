@@ -223,6 +223,115 @@ HD video calling interface powered by Stream Video SDK:
 
 This seamless integration ensures users can easily switch between text and video communication without losing context.
 
+### 🧵 **Thread Card Structure**
+Modern card-based interface for displaying conversation threads and posts:
+
+**Features:**
+- **Thread Cards** - Clean, card-based layout for conversations and posts
+- **Interactive Elements** - Like, comment, share buttons with real-time updates
+- **Media Support** - Image, video, and file attachments in thread cards
+- **Thread Hierarchy** - Visual representation of reply chains and nested comments
+- **User Attribution** - Clear display of author information, timestamps, and avatars
+- **Engagement Metrics** - Real-time like counts, comment counts, and view statistics
+
+**Technical Implementation:**
+- Reusable card components with consistent styling
+- Lazy loading for optimal performance with large thread lists
+- Real-time updates for engagement metrics
+- Responsive design adapting to different screen sizes
+- Accessibility features for screen readers and keyboard navigation
+
+### 💬 **Reply/Comment System**
+Comprehensive commenting and reply functionality for enhanced user interaction:
+
+**Features:**
+- **Nested Comments** - Multi-level reply chains with visual threading
+- **Rich Text Editor** - Markdown support, emoji picker, and text formatting
+- **Real-time Updates** - Instant comment notifications and live updates
+- **Comment Moderation** - Report, edit, and delete functionality
+- **Mention System** - @username mentions with notifications
+- **Comment Reactions** - Like, dislike, and emoji reactions
+
+**Technical Implementation:**
+- Recursive comment rendering for nested replies
+- Real-time WebSocket updates for new comments
+- Rich text editor with markdown parsing
+- Comment pagination and infinite scroll
+- Notification system for mentions and replies
+
+### 👤 **Profile Page** (`/profile/:userId`)
+Comprehensive user profile interface with customization options:
+
+**Features:**
+- **Profile Information** - Bio, location, languages, interests, and contact details
+- **Avatar Management** - Photo upload, generated avatars, and avatar customization
+- **Activity Timeline** - Recent posts, comments, and interactions
+- **Language Preferences** - Native languages, learning languages, and proficiency levels
+- **Friend Management** - Friends list, mutual connections, and friend suggestions
+- **Privacy Settings** - Profile visibility, contact preferences, and blocking options
+- **Statistics Dashboard** - Chat activity, call duration, and engagement metrics
+
+**Technical Implementation:**
+- Dynamic profile data loading with caching
+- Image upload and processing for avatars
+- Privacy controls with granular permissions
+- Activity feed with pagination
+- Real-time status updates and presence indicators
+
+### 🔍 **Search Page** (`/search`)
+Advanced search functionality for users, content, and conversations:
+
+**Features:**
+- **Global Search** - Search across users, messages, threads, and communities
+- **Advanced Filters** - Filter by content type, date range, language, and location
+- **User Discovery** - Find users by language, interests, and location
+- **Content Search** - Search through messages, posts, and shared media
+- **Search History** - Recent searches and saved search queries
+- **Smart Suggestions** - Auto-complete and search recommendations
+
+**Technical Implementation:**
+- Elasticsearch integration for fast, relevant search results
+- Real-time search suggestions and auto-complete
+- Advanced filtering with multiple criteria
+- Search result ranking and relevance scoring
+- Search analytics and performance optimization
+
+### 📊 **Activity Page** (`/activity`)
+Centralized activity feed and notification center:
+
+**Features:**
+- **Activity Feed** - Chronological feed of user interactions and updates
+- **Notification Center** - Friend requests, messages, mentions, and system notifications
+- **Activity Types** - Posts, comments, likes, friend requests, and call invitations
+- **Real-time Updates** - Live activity stream with WebSocket connections
+- **Activity Filtering** - Filter by activity type, date, and user
+- **Mark as Read** - Notification management and read status tracking
+
+**Technical Implementation:**
+- Real-time activity streaming with WebSocket connections
+- Notification queuing and delivery system
+- Activity aggregation and deduplication
+- Push notification integration for mobile devices
+- Activity analytics and engagement tracking
+
+### 🌐 **Community Page** (`/communities`)
+Community discovery and management interface:
+
+**Features:**
+- **Community Discovery** - Browse and search language learning communities
+- **Community Creation** - Create new communities with custom settings
+- **Member Management** - Join/leave communities, member roles, and permissions
+- **Community Feed** - Dedicated feed for community posts and discussions
+- **Event Management** - Community events, language exchanges, and meetups
+- **Community Moderation** - Admin tools, content moderation, and community guidelines
+
+**Technical Implementation:**
+- Community-based content filtering and organization
+- Role-based access control for community features
+- Event scheduling and notification system
+- Community analytics and engagement metrics
+- Moderation tools and automated content filtering
+
 ---
 
 ## 🚀 **Features Overview**
